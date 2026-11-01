@@ -1,0 +1,299 @@
+/* =================================
+   1. UNIVERSAL RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   2. BODY STYLING
+================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #e0e7ff,
+        #f0f9ff
+    );
+}
+
+
+/* =================================
+   3. MAIN CONTAINER
+================================= */
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =================================
+   4. PROFILE CARD
+================================= */
+
+.profile-card {
+    width: 380px;
+
+    background-color: white;
+
+    padding: 35px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.10);
+
+    transition: all 0.4s ease;
+}
+
+
+/* Card Hover Effect */
+
+.profile-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =================================
+   5. PROFILE IMAGE
+================================= */
+
+.profile-image {
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 125px;
+    height: 125px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid #2563eb;
+
+    transition: all 0.4s ease;
+}
+
+
+/* Image Hover */
+
+.profile-image img:hover {
+    transform: scale(1.1) rotate(5deg);
+
+    border-color: #1e40af;
+}
+
+
+/* =================================
+   6. NAME
+================================= */
+
+.profile-card h1 {
+    font-size: 28px;
+
+    color: #1e293b;
+
+    margin-bottom: 8px;
+}
+
+
+/* =================================
+   7. DESIGNATION
+================================= */
+
+.profile-card h3 {
+    font-size: 14px;
+
+    color: #2563eb;
+
+    margin-bottom: 18px;
+}
+
+
+/* =================================
+   8. BIO
+================================= */
+
+.bio {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #64748b;
+
+    margin-bottom: 22px;
+}
+
+
+/* =================================
+   9. SKILLS SECTION
+================================= */
+
+.skills {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+
+.skills span {
+    background-color: #dbeafe;
+
+    color: #1d4ed8;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+
+.skills span:hover {
+    background-color: #2563eb;
+
+    color: white;
+
+    transform: translateY(-4px);
+}
+
+
+/* =================================
+   10. SOCIAL LINKS
+================================= */
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+.social-links a {
+    text-decoration: none;
+
+    color: #2563eb;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+
+.social-links a:hover {
+    color: #1e40af;
+
+    transform: translateY(-5px);
+}
+
+
+.social-links i {
+    margin-right: 5px;
+
+    font-size: 18px;
+}
+
+
+/* =================================
+   11. CONTACT BUTTON
+================================= */
+
+.contact-btn {
+    display: inline-block;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 28px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+
+.contact-btn:hover {
+    background-color: #1e40af;
+
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+
+.contact-btn i {
+    margin-right: 7px;
+}
+
+
+/* =================================
+   12. RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .profile-card {
+        width: 100%;
+
+        padding: 30px 20px;
+    }
+
+    .profile-card h1 {
+        font-size: 24px;
+    }
+
+    .profile-card h3 {
+        font-size: 13px;
+    }
+
+    .bio {
+        font-size: 13px;
+    }
+
+}
